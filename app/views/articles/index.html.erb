@@ -1,0 +1,7 @@
+<h1>Howzit Welcome to these epic articles :P</h1>
+
+<% @articles.each do |art| %>
+  <div><h2><%= link_to art.title, article_path(art) %></h2></div>
+<% end %>
+
+<%= link_to "create", new_article_path %>
